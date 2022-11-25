@@ -1,0 +1,28 @@
+class MediaManager {
+  constructor(config) {
+    this.scene = config.scene;
+  }
+  playSFX(key) {
+    if (mt.model.sfxOn === true) {
+      let sfx = this.scene.sound.add(key, {
+        volume: 0.2,
+      });
+      sfx.play();
+    }
+  }
+
+  playBackgroundMusic(key) {
+    if (mt.model.musicOn === true) {
+      this.backgroundMusic = this.scene.sound.add(key, {
+        volume: 0.4,
+        loop: true,
+      });
+      this.backgroundMusic.play();
+    }
+  }
+
+  stopMusic() {
+    this.backgroundMusic.stop();
+    this.backgroundMusic.destroy();
+  }
+}
