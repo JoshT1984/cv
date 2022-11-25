@@ -1,8 +1,32 @@
 body {
-  background-color: beige;
+  background-color: rgb(218, 236, 241);
+}
+.firstHeader {
+  display: flex;
+  justify-content: center;
+}
+.resize {
+  width: 150px;
+  height: 150px;
 }
 
 #rlStein {
   width: 150px;
   height: 150px;
+}
+
+.jobs {
+  border-style: solid;
+}
+
+.hobbies {
+  border-style: solid;
+}
+
+.jobs td {
+  padding: 10px;
+}
+
+.hobbies td {
+  padding: 10px;
 }
